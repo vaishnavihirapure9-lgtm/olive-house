@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Olive House | Coastal Retreat</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================
+     BACK TO PORTFOLIO
+========================================= -->
+
+<a href="#" class="back-to-portfolio">
+    <i class="bi bi-arrow-left"></i>
+    <span>Back to Portfolio</span>
+</a>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            <span class="brand-main">THE OLIVE HOUSE</span>
+            <span class="brand-sub">PRIVATE COASTAL RETREAT</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#house">The House</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#rooms">Rooms</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#dining">Dining</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#journal">Journal</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <a href="#reservation" class="nav-book">
+                        Book Your Stay
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<header class="hero" id="home">
+
+    <img
+        src="images/hero.jpg"
+        alt="The Olive House overlooking the sea"
+        class="hero-image"
+    >
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-eyebrow">
+                A PRIVATE COASTAL RETREAT
+            </span>
+
+            <h1>
+                Stay where<br>
+                <em>the sea begins.</em>
+            </h1>
+
+            <p>
+                A private coastal retreat shaped by sunlight,
+                salt air and slow mornings.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#house" class="btn-primary-custom">
+                    Explore The House
+                    <i class="bi bi-arrow-down"></i>
+                </a>
+
+                <a href="#reservation" class="btn-outline-custom">
+                    Book Your Stay
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-location">
+            <span>THE MEDITERRANEAN COAST</span>
+            <i class="bi bi-arrow-down-right"></i>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     AVAILABILITY BAR
+========================================= -->
+
+<section class="availability-section">
+
+    <div class="container">
+
+        <div class="availability-box">
+
+            <div class="availability-heading">
+                <span>PLAN YOUR STAY</span>
+                <h3>Find your time by the sea.</h3>
+            </div>
+
+            <div class="availability-fields">
+
+                <div class="availability-field">
+                    <label for="checkIn">CHECK IN</label>
+                    <input type="date" id="checkIn">
+                </div>
+
+                <div class="availability-field">
+                    <label for="checkOut">CHECK OUT</label>
+                    <input type="date" id="checkOut">
+                </div>
+
+                <div class="availability-field">
+                    <label for="guests">GUESTS</label>
+                    <select id="guests">
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                    </select>
+                </div>
+
+                <div class="availability-field">
+                    <label for="roomType">ROOM</label>
+                    <select id="roomType">
+                        <option value="garden">Garden Suite</option>
+                        <option value="ocean">Ocean Suite</option>
+                        <option value="sunset">Sunset Villa</option>
+                    </select>
+                </div>
+
+                <button id="availabilityBtn" class="availability-button">
+                    Check Availability
+                </button>
+
+            </div>
+
+            <div id="availabilityMessage"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     INTRO
+========================================= -->
+
+<section class="intro-section">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+            <div class="intro-number">
+                01
+            </div>
+
+            <div class="intro-title">
+                <span>THE OLIVE HOUSE</span>
+                <h2>
+                    A house made<br>
+                    for <em>unhurried days.</em>
+                </h2>
+            </div>
+
+            <div class="intro-copy">
+                <p>
+                    Hidden between olive groves and the open sea,
+                    The Olive House is a private coastal escape
+                    designed around the simple pleasures of living well.
+                </p>
+
+                <p>
+                    Morning swims. Long lunches. Barefoot evenings.
+                    Nothing is rushed here.
+                </p>
+
+                <a href="#house" class="text-link">
+                    Discover the house
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     MARQUEE
+========================================= -->
+
+<section class="coastal-marquee">
+
+    <div class="marquee-track">
+
+        <span>SEA AIR</span>
+        <i>✦</i>
+        <span>OLIVE GROVES</span>
+        <i>✦</i>
+        <span>SLOW MORNINGS</span>
+        <i>✦</i>
+        <span>SUNSET DINNERS</span>
+        <i>✦</i>
+        <span>SEA AIR</span>
+        <i>✦</i>
+        <span>OLIVE GROVES</span>
+        <i>✦</i>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     THE HOUSE
+========================================= -->
+
+<section class="house-section section-space" id="house">
+
+    <div class="container">
+
+        <div class="section-heading-row">
+
+            <div>
+                <span class="section-number">02 — THE HOUSE</span>
+
+                <h2>
+                    Designed for<br>
+                    <em>living beautifully.</em>
+                </h2>
+            </div>
+
+            <p>
+                Every room opens toward the landscape, bringing
+                the outside in and making the coastline part of
+                everyday life.
+            </p>
+
+        </div>
+
+        <div class="house-feature">
+
+            <div class="house-image-wrap">
+                <img src="images/house.jpg" alt="The Olive House">
+                <span class="image-caption">THE MAIN HOUSE</span>
+            </div>
+
+            <div class="house-details">
+
+                <span>THE RETREAT</span>
+
+                <h3>
+                    Where architecture
+                    meets the horizon.
+                </h3>
+
+                <p>
+                    Natural stone, warm timber and soft linen
+                    come together in a home that feels rooted
+                    in its surroundings.
+                </p>
+
+                <div class="house-stats">
+
+                    <div>
+                        <strong>06</strong>
+                        <span>Guests</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Suites</span>
+                    </div>
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Private Pool</span>
+                    </div>
+
+                </div>
+
+                <a href="#rooms" class="text-link">
+                    Explore the rooms
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ROOMS
+========================================= -->
+
+<section class="rooms-section section-space" id="rooms">
+
+    <div class="container">
+
+        <div class="section-intro">
+
+            <span class="section-number">03 — STAY</span>
+
+            <h2>
+                Rooms with a view.
+            </h2>
+
+            <p>
+                Three private spaces, each with its own
+                relationship to the coast.
+            </p>
+
+        </div>
+
+        <div class="rooms-grid">
+
+            <!-- ROOM 1 -->
+
+            <article class="room-card">
+
+                <div class="room-image">
+                    <img src="images/room-1.jpg" alt="Garden Suite">
+
+                    <span class="room-number">01</span>
+
+                </div>
+
+                <div class="room-content">
+
+                    <div class="room-top">
+                        <span>GARDEN SUITE</span>
+                        <span>€420 / NIGHT</span>
+                    </div>
+
+                    <h3>Olive Garden Suite</h3>
+
+                    <p>
+                        A quiet ground-floor suite opening
+                        directly into the olive garden.
+                    </p>
+
+                    <button
+                        class="room-link"
+                        data-room="garden"
+                    >
+                        View Suite
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ROOM 2 -->
+
+            <article class="room-card room-card-featured">
+
+                <div class="room-image">
+                    <img src="images/room-2.jpg" alt="Ocean Suite">
+
+                    <span class="room-number">02</span>
+
+                </div>
+
+                <div class="room-content">
+
+                    <div class="room-top">
+                        <span>OCEAN SUITE</span>
+                        <span>€520 / NIGHT</span>
+                    </div>
+
+                    <h3>Azure Ocean Suite</h3>
+
+                    <p>
+                        Floor-to-ceiling windows frame uninterrupted
+                        views of the Mediterranean.
+                    </p>
+
+                    <button
+                        class="room-link"
+                        data-room="ocean"
+                    >
+                        View Suite
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ROOM 3 -->
+
+            <article class="room-card">
+
+                <div class="room-image">
+                    <img src="images/room-3.jpg" alt="Sunset Villa">
+
+                    <span class="room-number">03</span>
+
+                </div>
+
+                <div class="room-content">
+
+                    <div class="room-top">
+                        <span>SUNSET VILLA</span>
+                        <span>€680 / NIGHT</span>
+                    </div>
+
+                    <h3>The Sunset Villa</h3>
+
+                    <p>
+                        Our most private retreat, designed for
+                        evenings beneath the changing sky.
+                    </p>
+
+                    <button
+                        class="room-link"
+                        data-room="sunset"
+                    >
+                        View Villa
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     EXPERIENCES
+========================================= -->
+
+<section class="experiences-section section-space" id="experiences">
+
+    <div class="container">
+
+        <div class="experience-header">
+
+            <span class="section-number">04 — EXPERIENCES</span>
+
+            <h2>
+                Days that become<br>
+                <em>memories.</em>
+            </h2>
+
+        </div>
+
+        <div class="experience-grid">
+
+            <div class="experience-item large">
+                <img src="images/experience-1.jpg" alt="Morning by the sea">
+                <div class="experience-label">
+                    <span>01</span>
+                    <h3>Morning Swim</h3>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <img src="images/experience-2.jpg" alt="Olive grove">
+                <div class="experience-label">
+                    <span>02</span>
+                    <h3>Olive Grove Walk</h3>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <img src="images/experience-3.jpg" alt="Boat trip">
+                <div class="experience-label">
+                    <span>03</span>
+                    <h3>Private Boat Day</h3>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <img src="images/experience-4.jpg" alt="Coastal dinner">
+                <div class="experience-label">
+                    <span>04</span>
+                    <h3>Sunset Dinner</h3>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <img src="images/experience-5.jpg" alt="Local market">
+                <div class="experience-label">
+                    <span>05</span>
+                    <h3>Village Markets</h3>
+                </div>
+            </div>
+
+            <div class="experience-item large">
+                <img src="images/experience-6.jpg" alt="Sunset at the coast">
+                <div class="experience-label">
+                    <span>06</span>
+                    <h3>Golden Hour</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     DINING
+========================================= -->
+
+<section class="dining-section section-space" id="dining">
+
+    <div class="container">
+
+        <div class="dining-grid">
+
+            <div class="dining-image">
+                <img src="images/dining.jpg" alt="Dining at The Olive House">
+            </div>
+
+            <div class="dining-content">
+
+                <span class="section-number">05 — DINING</span>
+
+                <h2>
+                    From the coast<br>
+                    <em>to your table.</em>
+                </h2>
+
+                <p>
+                    Our kitchen follows the rhythm of the region —
+                    fresh seafood, garden vegetables, local olive oil
+                    and long evenings around the table.
+                </p>
+
+                <div class="dining-note">
+                    <span>DINNER SERVED</span>
+                    <strong>19:00 — 22:30</strong>
+                </div>
+
+                <button class="dining-menu-btn">
+                    View Dining Menu
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     GALLERY
+========================================= -->
+
+<section class="gallery-section section-space">
+
+    <div class="container">
+
+        <div class="section-intro gallery-intro">
+
+            <span class="section-number">06 — GALLERY</span>
+
+            <h2>
+                A glimpse of<br>
+                <em>the good life.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-filters">
+
+            <button class="gallery-filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="gallery-filter" data-filter="house">
+                House
+            </button>
+
+            <button class="gallery-filter" data-filter="coast">
+                Coast
+            </button>
+
+            <button class="gallery-filter" data-filter="life">
+                Life
+            </button>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item gallery-wide" data-category="house">
+                <img src="images/gallery-1.jpg" alt="The Olive House interior">
+            </div>
+
+            <div class="gallery-item" data-category="coast">
+                <img src="images/gallery-2.jpg" alt="Mediterranean coast">
+            </div>
+
+            <div class="gallery-item" data-category="life">
+                <img src="images/gallery-3.jpg" alt="Slow morning">
+            </div>
+
+            <div class="gallery-item" data-category="house">
+                <img src="images/gallery-4.jpg" alt="Villa interior">
+            </div>
+
+            <div class="gallery-item" data-category="coast">
+                <img src="images/gallery-5.jpg" alt="Coastal view">
+            </div>
+
+            <div class="gallery-item gallery-wide" data-category="life">
+                <img src="images/gallery-6.jpg" alt="Sunset">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =========================================
+     TESTIMONIALS
+========================================= -->
+
+<section class="testimonials-section section-space">
+
+    <div class="container">
+
+        <div class="testimonial-heading">
+            <span class="section-number">07 — GUEST BOOK</span>
+            <h2>Words from our guests.</h2>
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial active">
+
+                <div class="quote-mark">“</div>
+
+                <blockquote>
+                    The kind of place where you stop checking
+                    the time after the first morning.
+                </blockquote>
+
+                <div class="testimonial-author">
+                    <strong>ELENA M.</strong>
+                    <span>London, UK</span>
+                </div>
+
+            </div>
+
+            <div class="testimonial">
+
+                <div class="quote-mark">“</div>
+
+                <blockquote>
+                    Beautifully quiet, impossibly peaceful and
+                    every detail felt considered.
+                </blockquote>
+
+                <div class="testimonial-author">
+                    <strong>THOMAS R.</strong>
+                    <span>Amsterdam, NL</span>
+                </div>
+
+            </div>
+
+            <div class="testimonial">
+
+                <div class="quote-mark">“</div>
+
+                <blockquote>
+                    We came for the sea and stayed for the feeling
+                    of being completely away from everything.
+                </blockquote>
+
+                <div class="testimonial-author">
+                    <strong>SOFIA & LUCA</strong>
+                    <span>Milan, IT</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="testimonial-controls">
+
+            <button id="testimonialPrev">
+                <i class="bi bi-arrow-left"></i>
+            </button>
+
+            <div class="testimonial-dots">
+
+                <button class="testimonial-dot active"></button>
+                <button class="testimonial-dot"></button>
+                <button class="testimonial-dot"></button>
+
+            </div>
+
+            <button id="testimonialNext">
+                <i class="bi bi-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SUMMER OFFER
+========================================= -->
+
+<section class="offer-section">
+
+    <div class="offer-image">
+        <img src="images/summer.jpg" alt="Summer at The Olive House">
+    </div>
+
+    <div class="offer-overlay"></div>
+
+    <div class="container offer-container">
+
+        <div class="offer-content">
+
+            <span>SEASONAL ESCAPE</span>
+
+            <h2>
+                Seven nights<br>
+                <em>by the sea.</em>
+            </h2>
+
+            <p>
+                Stay seven nights and receive a private
+                sunset boat experience for two.
+            </p>
+
+            <button id="offerBtn" class="btn-light-custom">
+                Discover The Offer
+                <i class="bi bi-arrow-up-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     LOCATION
+========================================= -->
+
+<section class="location-section section-space">
+
+    <div class="container">
+
+        <div class="location-grid">
+
+            <div class="location-content">
+
+                <span class="section-number">08 — LOCATION</span>
+
+                <h2>
+                    Somewhere between<br>
+                    <em>land & sea.</em>
+                </h2>
+
+                <p>
+                    Set on a quiet stretch of coastline, the house
+                    is close enough to explore the villages and
+                    coves around it, yet private enough to disappear.
+                </p>
+
+                <div class="location-details">
+
+                    <div>
+                        <span>NEAREST AIRPORT</span>
+                        <strong>45 MINUTES</strong>
+                    </div>
+
+                    <div>
+                        <span>OLD TOWN</span>
+                        <strong>18 MINUTES</strong>
+                    </div>
+
+                    <div>
+                        <span>PRIVATE BEACH</span>
+                        <strong>04 MINUTES</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="location-image">
+                <img src="images/location.jpg" alt="Location of The Olive House">
+
+                <div class="location-pin">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>THE OLIVE HOUSE</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     JOURNAL
+========================================= -->
+
+<section class="journal-section section-space" id="journal">
+
+    <div class="container">
+
+        <div class="section-heading-row">
+
+            <div>
+                <span class="section-number">09 — JOURNAL</span>
+
+                <h2>
+                    Notes from<br>
+                    <em>the coast.</em>
+                </h2>
+            </div>
+
+            <p>
+                Stories, recipes and places worth slowing down for.
+            </p>
+
+        </div>
+
+
+        <div class="journal-grid">
+
+            <article class="journal-card">
+
+                <div class="journal-image">
+                    <img src="images/journal-1.jpg" alt="Mediterranean mornings">
+                </div>
+
+                <div class="journal-content">
+
+                    <span>THE COAST</span>
+
+                    <h3>
+                        How to spend a perfect
+                        Mediterranean morning
+                    </h3>
+
+                    <a href="#">
+                        Read story
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="journal-card">
+
+                <div class="journal-image">
+                    <img src="images/journal-2.jpg" alt="Local olive oil">
+                </div>
+
+                <div class="journal-content">
+
+                    <span>AT THE TABLE</span>
+
+                    <h3>
+                        The olive oil we keep
+                        coming back to
+                    </h3>
+
+                    <a href="#">
+                        Read story
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="journal-card">
+
+                <div class="journal-image">
+                    <img src="images/journal-3.jpg" alt="Coastal villages">
+                </div>
+
+                <div class="journal-content">
+
+                    <span>EXPLORE</span>
+
+                    <h3>
+                        Three coastal villages
+                        worth the drive
+                    </h3>
+
+                    <a href="#">
+                        Read story
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FAQ
+========================================= -->
+
+<section class="faq-section section-space">
+
+    <div class="container">
+
+        <div class="faq-grid">
+
+            <div class="faq-title">
+
+                <span class="section-number">10 — FAQ</span>
+
+                <h2>
+                    Before you<br>
+                    <em>arrive.</em>
+                </h2>
+
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How many guests can stay at The Olive House?
+                        <i class="bi bi-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        The house comfortably accommodates up to
+                        six guests across three private suites.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is the house available for private hire?
+                        <i class="bi bi-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Yes. The entire property can be reserved
+                        exclusively for your group.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is breakfast included?
+                        <i class="bi bi-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        A seasonal breakfast prepared with local
+                        ingredients is included with every stay.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Can you arrange experiences?
+                        <i class="bi bi-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        We can arrange private boat trips, local
+                        guides, transfers, dining experiences and
+                        other activities on request.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is there a minimum stay?
+                        <i class="bi bi-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        A minimum stay may apply depending on the
+                        season. Availability is confirmed when booking.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     RESERVATION
+========================================= -->
+
+<section class="reservation-section section-space" id="reservation">
+
+    <div class="container">
+
+        <div class="reservation-box">
+
+            <div class="reservation-intro">
+
+                <span>11 — RESERVATIONS</span>
+
+                <h2>
+                    Your place<br>
+                    <em>by the sea.</em>
+                </h2>
+
+                <p>
+                    Tell us when you'd like to arrive.
+                    We'll take care of the rest.
+                </p>
+
+            </div>
+
+
+            <form id="bookingForm" class="booking-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="bookingCheckIn">CHECK IN</label>
+                        <input type="date" id="bookingCheckIn" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingCheckOut">CHECK OUT</label>
+                        <input type="date" id="bookingCheckOut" required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="bookingGuests">GUESTS</label>
+
+                        <select id="bookingGuests" required>
+                            <option value="">Select</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="bookingRoom">ROOM</label>
+
+                        <select id="bookingRoom" required>
+                            <option value="">Select a room</option>
+                            <option>Garden Suite</option>
+                            <option>Ocean Suite</option>
+                            <option>Sunset Villa</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bookingName">YOUR NAME</label>
+
+                        <input
+                            type="text"
+                            id="bookingName"
+                            placeholder="Full name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="bookingEmail">EMAIL</label>
+
+                        <input
+                            type="email"
+                            id="bookingEmail"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="reservation-submit">
+                    Request Reservation
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+                <div id="formSuccess"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     NEWSLETTER
+========================================= -->
+
+<section class="newsletter-section">
+
+    <div class="container">
+
+        <div class="newsletter-inner">
+
+            <span>THE OLIVE HOUSE JOURNAL</span>
+
+            <h2>
+                A little piece of<br>
+                <em>the coast, occasionally.</em>
+            </h2>
+
+            <p>
+                Seasonal notes, new experiences and stories
+                from The Olive House.
+            </p>
+
+            <form id="newsletterForm">
+
+                <div class="newsletter-input">
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+                <div id="newsletterMessage"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <span>THE OLIVE HOUSE</span>
+
+                <p>
+                    A private coastal retreat
+                    shaped by sea, sun and time.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <span>EXPLORE</span>
+
+                    <a href="#house">The House</a>
+                    <a href="#rooms">Rooms</a>
+                    <a href="#experiences">Experiences</a>
+                    <a href="#dining">Dining</a>
+
+                </div>
+
+                <div>
+                    <span>CONNECT</span>
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">hello@theolivehouse.com</a>
+
+                </div>
+
+                <div>
+                    <span>VISIT</span>
+
+                    <p>
+                        Coastal Road<br>
+                        Mediterranean Coast<br>
+                        Southern Europe
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 THE OLIVE HOUSE
+            </span>
+
+            <span>
+                A PRIVATE COASTAL RETREAT
+            </span>
+
+            <a href="#home">
+                Back to top
+                <i class="bi bi-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     ROOM MODAL
+========================================= -->
+
+<div
+    class="modal fade"
+    id="roomModal"
+    tabindex="-1"
+    aria-hidden="true"
+>
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content custom-bootstrap-modal">
+
+            <button
+                type="button"
+                class="modal-close"
+                data-bs-dismiss="modal"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <div class="modal-room-grid">
+
+                <div>
+                    <img id="modalRoomImage" src="" alt="">
+                </div>
+
+                <div class="modal-room-content">
+
+                    <span id="modalRoomNumber"></span>
+
+                    <h2 id="modalRoomTitle"></h2>
+
+                    <p id="modalRoomDescription"></p>
+
+                    <strong id="modalRoomPrice"></strong>
+
+                    <a href="#reservation" data-bs-dismiss="modal">
+                        Request this room
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     GALLERY LIGHTBOX
+========================================= -->
+
+<div id="galleryLightbox" class="gallery-lightbox">
+
+    <button id="lightboxClose">
+        <i class="bi bi-x-lg"></i>
+    </button>
+
+    <button id="lightboxPrev">
+        <i class="bi bi-arrow-left"></i>
+    </button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <button id="lightboxNext">
+        <i class="bi bi-arrow-right"></i>
+    </button>
+
+</div>
+
+
+<!-- =========================================
+     OFFER MODAL
+========================================= -->
+
+<div id="offerModal" class="custom-modal">
+
+    <div class="custom-modal-box">
+
+        <button
+            class="custom-modal-close"
+            data-close="offerModal"
+        >
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <span>SEASONAL ESCAPE</span>
+
+        <h2>
+            Seven nights<br>
+            <em>by the sea.</em>
+        </h2>
+
+        <p>
+            Stay seven nights and receive a private sunset
+            boat experience for two, seasonal breakfast and
+            a complimentary bottle of local wine.
+        </p>
+
+        <a href="#reservation" data-close="offerModal">
+            Request this offer
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     DINING MODAL
+========================================= -->
+
+<div id="diningModal" class="custom-modal">
+
+    <div class="custom-modal-box dining-modal-box">
+
+        <button
+            class="custom-modal-close"
+            data-close="diningModal"
+        >
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <span>THE DINING ROOM</span>
+
+        <h2>
+            Today's<br>
+            <em>table.</em>
+        </h2>
+
+        <div class="menu-list">
+
+            <div>
+                <span>START</span>
+                <strong>Grilled peach, burrata & basil</strong>
+            </div>
+
+            <div>
+                <span>MAIN</span>
+                <strong>Catch of the day, lemon & herbs</strong>
+            </div>
+
+            <div>
+                <span>GARDEN</span>
+                <strong>Heirloom tomatoes & local olive oil</strong>
+            </div>
+
+            <div>
+                <span>SWEET</span>
+                <strong>Almond tart & seasonal fruit</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
